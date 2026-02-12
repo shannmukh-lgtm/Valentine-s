@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rose: #ff6b9d;
+            --deep-rose: #c9184a;
+            --blush: #ffccd5;
+            --cream: #fff0f3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Pro', serif;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--blush) 50%, var(--rose) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .letter-container {
+            background: white;
+            max-width: 700px;
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(201, 24, 74, 0.2);
+            animation: fade-in 1s ease-out;
+        }
+        
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--deep-rose);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .letter-content {
+            font-size: 1.3rem;
+            line-height: 2;
+            color: #333;
+            text-align: center;
+        }
+        
+        .letter-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 3rem;
+            color: var(--deep-rose);
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <h1>💕</h1>
+        <div class="letter-content">
+            <p>Dear Surabhi,</p>
+            
+            <p>[Your letter content here]</p>
+            
+            <p>[Add your heartfelt message]</p>
+            
+            <p>[This is where your beautiful words go]</p>
+            
+            <div class="signature">
+                With love,<br>
+                [Your name]
+            </div>
+        </div>
+    </div>
+</body>
+</html>
